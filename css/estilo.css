@@ -41,7 +41,11 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-
+.section_contactanos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;}
+}
 
 
 /*HEADER*/
@@ -83,7 +87,9 @@ footer{
 .nav2{
     display: none;
 }
-
+.header__contactanos{
+    background-image: url(Ono_&_Co./imagenes/fondo_contacto.jpeg);
+}
 
 /*SECTION*/
 
