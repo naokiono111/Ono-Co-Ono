@@ -3,7 +3,6 @@
 }
 .estilo{
     font-family: Marcellus;
-
     font-size: 48px;
     line-height: 480px;
     align-self: center;
@@ -11,8 +10,6 @@
     letter-spacing: 0.25em;
     color: #000000;
 }
-
-
 /*grid*/
 
 
@@ -83,7 +80,9 @@ footer{
     transition-duration: 0.1s;
     transition-timing-function: linear;
 }
-
+.nav2{
+    display: none;
+}
 
 
 /*SECTION*/
@@ -124,5 +123,35 @@ header{
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+footer{
+    grid-template-columns: 1fr 1fr 3fr;
+}
+.newsletter{
+    display: inline-block;
+    font-family: Marcellus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.header__marca{
 
+    font-size: 60px;
+    letter-spacing: -0.05em;
+    color: #414141;
+    height: 50px;
+}
+.login{
+
+    font-size: 20px;
+    color: #000000;
+}
+.login li{
+    display: inline-block;
+    margin: 5px;
+}
+.nav2{
+    display: inline-block;
+}
 }
