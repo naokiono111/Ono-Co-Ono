@@ -1,9 +1,22 @@
-/*estilos de cajas y elementos*/
 * {
     list-style: none;
 }
+.estilo{
+    font-family: Marcellus;
+
+    font-size: 48px;
+    line-height: 480px;
+    align-self: center;
+    justify-self: center;
+    letter-spacing: 0.25em;
+    color: #000000;
+}
+
 
 /*grid*/
+
+
+
 main{
     display: grid;
     grid-template-areas: 
@@ -17,26 +30,26 @@ header{
     background: linear-gradient(180deg, #F7F4E8 79.91%, rgba(255, 255, 255, 0) 102.52%);
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    position: sticky; top: 0;
 }
 section{
     grid-area: section;
-    background-image: url("/Users/naokiono/Desktop/Ono_&_Co./imagenes/fondo_principal.jpeg");
-    background-position: center;
-    background-size: cover;
-    opacity: 0.7;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+
 }
 footer{
     grid-area: footer;
     background: rgba(58, 58, 58, 0.92);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-/* elementos de header*/
+
+
+/*HEADER*/
+
+
 
 .header__logo{
     width: 169px;
@@ -48,9 +61,10 @@ footer{
     font-family: Marcellus;
     font-style: normal;
     font-weight: normal;
-    font-size: 6vw;
+    font-size: 30px;
     letter-spacing: -0.05em;
     color: #414141;
+    height: 50px;
 }
 .login{
     padding: 0%;
@@ -58,31 +72,12 @@ footer{
     font-family: Marcellus;
     font-style: normal;
     font-weight: normal;
-    font-size: 2vw;
+    font-size: 10px;
     color: #000000;
 }
-
-/*navegador*/
-
-
-#listado{
-    width: 150px;
-    height: 0px;
+.listado{
+    list-style: none;
     font-family: Marcellus;
-    font-style: normal;
-    font-size: 15px;
-
-}
-#listado li{
-    display:inline-block;
-    line-height:23px;
-}
-
-.listado__desplegable{
-    font-family: Marcellus;
-
-}
-.listado__desplegable:hover{
     font-weight: bold;
     transition-property: all;
     transition-duration: 0.1s;
@@ -91,39 +86,43 @@ footer{
 
 
 
-/*elementos de section*/
-.titulo{
-    display: inline-block;
-    align-self: center;
-    justify-self: center;
+/*SECTION*/
+
+.fondo{
+    opacity: 0.65;
+    height: 581px;
+    object-fit: cover;
+}
+
+
+
+/*FOOTER*/
+.ayuda{
     font-family: Marcellus;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.25em;
-    color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
-.flecha{
-    align-self: center;
-    justify-self: center;
-    width: 25px;
-    height: 45px;
+.encuentranos{
+    font-family: Marcellus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
 }
-
-
-/*footer y sus elementos */
-
+.newsletter{
+    display: none;
+}
 
 /* Responsive para dispositivo mas grande que un IPhone X */
 
 @media screen and (min-width: 376px) {
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 
-    .navegador{
-        display: none;
-    }
-    
 }
