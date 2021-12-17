@@ -1,0 +1,128 @@
+body {
+  font-family: Marcellus;
+  font-style: normal;
+  font-weight: normal;
+}
+body main {
+  display: grid;
+  grid-template-areas: "header" "section" "footer";
+  grid-template-rows: 96px 581px 135px;
+}
+body header {
+  grid-area: header;
+  background: linear-gradient(180deg, #F7F4E8 79.91%, rgba(255, 255, 255, 0) 102.52%);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: sticky;
+  top: 0;
+}
+body header .header__logo {
+  width: 169px;
+  height: 39px;
+}
+body header .header__marca {
+  justify-self: center;
+  text-decoration: none;
+  font-family: Marcellus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: -0.05em;
+  color: #414141;
+  height: 50px;
+}
+body header .login {
+  padding: 0%;
+  margin: 0%;
+  font-family: Marcellus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  color: #000000;
+}
+body header .listado {
+  list-style: none;
+  font-family: Marcellus;
+  font-weight: bold;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+body header .nav2 {
+  display: none;
+}
+body section {
+  grid-area: section;
+}
+body section .section_contactanos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+body footer {
+  grid-area: footer;
+  background: rgba(58, 58, 58, 0.92);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+body footer .ayuda {
+  font-family: Marcellus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+body footer .encuentranos {
+  font-family: Marcellus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+body footer .newsletter {
+  display: none;
+}
+
+@media screen and (min-width: 376px) {
+  header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  header .header__marca {
+    font-size: 60px;
+    letter-spacing: -0.05em;
+    color: #414141;
+    height: 50px;
+  }
+  header .login {
+    font-size: 20px;
+    color: #000000;
+  }
+  header .login li {
+    display: inline-block;
+    margin: 5px;
+  }
+  header .nav2 {
+    display: inline-block;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr 3fr;
+  }
+  footer .newsletter {
+    display: inline-block;
+    font-family: Marcellus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+}
+/*# sourceMappingURL=main.scss.map */
+
+/*# sourceMappingURL=main.css.map */
