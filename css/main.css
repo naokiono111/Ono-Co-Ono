@@ -87,6 +87,18 @@ body footer .newsletter {
   display: none;
 }
 
+
+.imagenes/menuburger.png{
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+
+
+
 @media screen and (min-width: 376px) {
   header {
     display: grid;
@@ -106,9 +118,7 @@ body footer .newsletter {
     display: inline-block;
     margin: 5px;
   }
-  header .nav2 {
-    display: inline-block;
-  }
+
 
   footer {
     grid-template-columns: 1fr 1fr 3fr;
